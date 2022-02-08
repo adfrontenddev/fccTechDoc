@@ -1,0 +1,199 @@
+/*---------------
+      Reset
+---------------*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+   padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+   margin: 0;
+}
+
+/* Set core body defaults */
+body {
+   min-height: 100vh;
+   scroll-behavior: smooth;
+   text-rendering: optimizeSpeed;
+   line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+   list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+   text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+   max-width: 100%;
+   display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+   margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+   font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+   * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+   }
+}
+
+/*---------------------
+   Custom Properties
+----------------------*/
+:root {
+   --clr-light: #e0fbfc;
+   --clr-med: #98c1d9;
+   --clr-dark: #3d5a80;
+   --clr-accent: #ee6c4d;
+
+   /* font families */
+   --ff-header: 'Anton', sans-serif;
+   --ff-body: 'Roboto', sans-serif;
+}
+
+/*---------------------
+  Utility Classes
+----------------------*/
+.flex {
+   display: flex;
+}
+
+/*---------------------
+   General Styles
+----------------------*/
+
+body {
+   font-family: var(--ff-body);
+   font-weight: 300;
+   color: rgb(102, 100, 100);
+}
+
+h1,
+h2,
+h3,
+h4 {
+   font-weight: 700;
+   font-family: var(--ff-header);
+   color: var(--clr-dark);
+}
+
+p {
+   margin-bottom: 1em;
+}
+
+/* Navigation */
+
+#navbar {
+   padding: 1.5em 0 1.5em 1.5em;
+   background-color: var(--clr-dark);
+
+   width: 100%;
+}
+
+.navbar-header {
+   font-family: var(--ff-header);
+   color: var(--clr-light);
+   font-size: 2em;
+}
+
+.nav-links li {
+   font-size: 1.25rem;
+}
+
+.nav-link {
+   text-decoration: none;
+   color: var(--clr-light);
+   padding: 1em;
+   display: block;
+}
+
+.nav-link:hover {
+   background-color: var(--clr-med);
+   color: var(--clr-dark);
+}
+
+#main-doc {
+   padding: 2rem;
+}
+
+.main-section {
+   margin-bottom: 2em;
+   border-bottom: 1px solid #98c1d9;
+}
+
+.main-section-header {
+   font-weight: 700;
+   font-size: 1.25em;
+   color: var(--clr-dark);
+   margin: 0.5em 0;
+   text-transform: uppercase;
+}
+
+code {
+   background-color: var(--clr-light);
+   padding: 1em;
+   display: block;
+   margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 820px) {
+   #navbar {
+      position: fixed;
+      width: 380px;
+      height: 100vh;
+      top: 0;
+      left: 0;
+   }
+   .navbar-header {
+      font-size: 1.5em;
+   }
+
+   #main-doc {
+      margin-top: 0;
+      margin-left: 380px;
+      max-width: 1500px;
+   }
+}

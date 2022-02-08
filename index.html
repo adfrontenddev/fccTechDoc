@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="tech-doc.css" />
+      <title>Technical Documentation Page</title>
+   </head>
+   <body>
+      <nav id="navbar">
+         <header class="navbar-header">Getting started with the Web</header>
+         <ul class="nav-links">
+            <li><a href="#Your_first_website" class="nav-link">Your first website</a></li>
+            <li><a href="#Installing_Software" class="nav-link">Installing Software</a></li>
+            <li><a href="#What_will_your_site_look_like?" class="nav-link">What will your site look like?</a></li>
+            <li><a href="#Dealing_with_files" class="nav-link">Dealing with files</a></li>
+            <li><a href="#HTML_basics" class="nav-link">HTML Basics</a></li>
+            <li><a href="#CSS_basics" class="nav-link">CSS Basics</a></li>
+            <li><a href="#Javascript_basics" class="nav-link">Javascript Basics</a></li>
+            <li><a href="#Publishing_your_website" class="nav-link">Publishing your website</a></li>
+         </ul>
+      </nav>
+      <main id="main-doc">
+         <div class="main-title"></div>
+         <section class="main-section" id="Your_first_website">
+            <header class="main-section-header">Your first website</header>
+            <p>It's a lot of work to create a professional website, so if you're new to web development, we encourage you to start small. You won't build another Facebook right away, but it's not hard to make your own simple website online, so we'll start there.</p>
+            <p>By working through the articles listed below, you will go from nothing to getting your first webpage online. Let's begin our journey!</p>
+         </section>
+         <section class="main-section" id="Installing_Software">
+            <header class="main-section-header">Installing Software</header>
+            <p>
+               When it comes to tools for building a website, there's a lot to pick from. If you're just starting, you might be confused by the array of code editors, frameworks, and testing tools out there. In Installing basic software, we will show you step-by-step how to install the software you
+               need to begin some basic web development.
+            </p>
+            <p>What tools do you need?</p>
+            <ul>
+               <li>A computer</li>
+               <li>A text editor</li>
+               <li>Web browsers</li>
+               <li>A graphics editor</li>
+            </ul>
+         </section>
+         <section class="main-section" id="What_will_your_site_look_like?">
+            <header class="main-section-header">What will your site look like?</header>
+            <p>Before you start writing the code for your website, you should plan it first. What information are you showcasing? What fonts and colors are you using? What will your website look like? We outline a simple method you can follow to plan out your site's content and design.</p>
+            <p>To begin, you'll need to answer these questions</p>
+            <ol>
+               <li>What is your website about?</li>
+               <li>What information are you presenting on the subject?</li>
+               <li>What does your website look like, in simple high-level terms?</li>
+            </ol>
+         </section>
+         <section class="main-section" id="Dealing_with_files">
+            <header class="main-section-header">Dealing with files</header>
+            <p>
+               A website consists of many files: text content, code, stylesheets, media content, and so on. When you're building a website, you need to assemble these files into a sensible structure and make sure they can talk to one another. Dealing with files explains how to set up a sensible file
+               structure for your website and what issues you should be aware of.
+            </p>
+         </section>
+         <section class="main-section" id="HTML_basics">
+            <header class="main-section-header">HTML Basics</header>
+            <p>
+               HTML is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink
+               to somewhere else, can italicize words, can make the font bigger or smaller, and so on. For example, take the following line of content:
+            </p>
+            <code>My cat is very grumpy</code>
+            <p>If we wanted the line to stand by itself, we could specify that it is a paragraph by enclosing it in paragraph tags:</p>
+            <code> &lt;p&gt;My cat is very grumpy&lt;/p&gt;</code>
+         </section>
+         <section class="main-section" id="CSS_basics">
+            <header class="main-section-header">CSS basics</header>
+            <p>Cascading Stylesheets (CSS) is the code that you use to style your website. For example, do you want the text to be black or red? Where should content be drawn on the screen? What background images and colors should be used to decorate your website?</p>
+            <p>Like HTML, CSS is not a programming language. It's not a markup language either. CSS is a style sheet language. CSS is what you use to selectively style HTML elements. For example, this CSS selects paragraph text, setting the color to red:</p>
+            <code> p { color: red; } </code>
+            <p>To make the code work, we still need to apply this CSS (above) to your HTML document. Otherwise, the styling won't change the appearance of the HTML.</p>
+            <p>The following code is added to your html file to link to your stylesheet.</p>
+            <code> &lt;link href="styles/style.css" rel="stylesheet"&gt; </code>
+         </section>
+         <section class="main-section" id="Javascript_basics">
+            <header class="main-section-header">JavaScript basics</header>
+            <p>
+               JavaScript is the programming language that you use to add interactive features to your website. Some examples could be games, things that happen when buttons are pressed or data is entered in forms, dynamic styling effects, animation, and much more. JavaScript basics give you an idea
+               of what is possible with this exciting language, and how to get started.
+            </p>
+            <p>Variables are containers that store values. You start by declaring a variable with the let keyword, followed by the name you give to the variable:</p>
+            <code>let myVariable;</code>
+            <p>JavaScript is case sensitive. This means <code>myVariable</code> is not the same as <code>myvariable</code> If you have problems in your code, check the case!</p>
+         </section>
+         <section class="main-section" id="Publishing_your_website">
+            <header class="main-section-header">Publishing your website</header>
+            <p>Once you have finished writing the code and organizing the files that make up your website, you need to put it all online so people can find it. Publishing your sample code describes how to get your simple sample code online with minimum effort.</p>
+         </section>
+      </main>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+   </body>
+</html>
